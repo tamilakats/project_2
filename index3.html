@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto</title>
+  <link href="style.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+ 
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Crypto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="reports">Live Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="about">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="crypto">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Search</button>
+      </form>
+    </div>
+  </nav>
+
+</head>
+
+<body>
+  <header class="header">
+  </header>
+  <div id="root">
+
+    <div class="parallax-window" data-parallax="scroll" data-natural-width="960" data-natural-height="641"
+      data-image-src="/pic/image-project2.jpg"></div>
+
+    <div id = "list"> </div>
+    <div class = "chart" id = "chart1"> </div>
+    <div id = "forsearch"></div>
+    <div id = "forabout"></div>
+
+
+  </div>
+  <!-- Modal -->
+  <div id="myModal">
+    <span class="choose">You can choose 5 coins. <br> Please select one to delete from the list: <br></span>
+    <div class="wrap">
+      <ul id="content" class="list4b"></ul>
+    </div>
+    <button id="confirm">Confirm</button>
+  </div>
+  <div id="myOverlay"></div>
+
+  <div id="myModalError">
+    <span class="error">Error: Not Found</span>
+    <br>
+    <button id="ok">OK</button>
+  </div>
+  <div id="myOverlay2"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+  <script src="/parallax.js-1.5.0/parallax.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="fetch2.js"></script>
+  <script src="fetch.js"></script>
+  <script src="new19.js"></script>
+
+</body>
+
+</html>
